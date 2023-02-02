@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import CardGrid from "./CardGrid";
 import authorList from "../data/authors";
+import Scoreboard from "./Scoreboard";
 
 export default function Game() {
   const [level, setLevel] = useState(1);
@@ -88,8 +89,9 @@ export default function Game() {
   }
 
   return (
-    <div className="game">
+    <main>
+      <Scoreboard score={score} highScore={highScore} />
       <CardGrid authors={authors} onClick={handleCardClick} />
-    </div>
+    </main>
   );
 }

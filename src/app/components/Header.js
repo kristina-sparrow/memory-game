@@ -1,21 +1,9 @@
 import React from "react";
 
-export default function Header(props) {
+export default function Header() {
   return (
     <header>
-      <div className="header-title">
-        <h1>Memory Game</h1>
-      </div>
-      <div className="header-description">
-        <p>
-          Earn points by clicking on an image you haven`&apos;`t clicked on
-          before.
-        </p>
-      </div>
-      <div className="header-score">
-        <p className="score">Score: {props.score}</p>
-        <p className="score">High Score: {props.highScore}</p>
-      </div>
+      <h1 className="header-title">Memory Game</h1>
     </header>
   );
 }
