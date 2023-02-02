@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from "react";
 import CardGrid from "./CardGrid";
-import authorList from "../data/authors";
 import Scoreboard from "./Scoreboard";
+import GameOverlay from "./GameOverlay";
+import authorList from "../data/authors";
 
 export default function Game() {
   const [level, setLevel] = useState(1);
@@ -9,7 +10,10 @@ export default function Game() {
   const [clickedCards, setClickedCards] = useState([]);
   const [score, setScore] = useState(0);
   const [highScore, setHighScore] = useState(0);
+  const [gameOver, setGameOver] = useState(false);
+  const [gameReset, setGameReset] = useState(false);
 
+  // LOAD CARDS
   function calculateRequiredCards(level) {
     switch (level) {
       case 1:
@@ -51,23 +55,17 @@ export default function Game() {
     return [...array].sort(() => Math.random() - 0.5);
   }
 
+  // ON CARD CLICK
   function handleCardClick(e) {
     const card = e.target.parentNode.lastChild.textContent;
-    playSelection(card);
-    setAuthors(shuffleCards(authors));
-  }
-
-  function playSelection(card, level) {
     if (!clickedCards) {
       updateScore();
       setClickedCards([card]);
+      setAuthors(shuffleCards(authors));
       return;
-    }
-    if (clickedCards.includes(card)) {
-      if (score > highScore) {
-        setHighScore(score);
-      }
-      toggleGameOver();
+    } else if (clickedCards.includes(card)) {
+      if (score > highScore) setHighScore(score);
+      setGameOver(true);
       return;
     }
     setClickedCards([...clickedCards, card]);
@@ -76,6 +74,7 @@ export default function Game() {
       setClickedCards([]);
       setLevel(level + 1);
     }
+    setAuthors(shuffleCards(authors));
   }
 
   function updateScore() {
@@ -84,14 +83,30 @@ export default function Game() {
     setScore(newScore);
   }
 
-  function toggleGameOver() {
-    //do something...
+  // GAME OVER & RESET
+  function restartGame() {
+    setScore(0);
+    setGameOver(false);
+    setGameReset(true);
   }
+
+  useEffect(() => {
+    if (gameReset === true) {
+      setLevel(1);
+      setClickedCards([]);
+      setGameReset(false);
+    }
+  }, [gameReset]);
 
   return (
     <main>
       <Scoreboard score={score} highScore={highScore} />
       <CardGrid authors={authors} onClick={handleCardClick} />
+      <GameOverlay
+        score={score}
+        gameOver={gameOver}
+        restartGame={restartGame}
+      />
     </main>
   );
 }
