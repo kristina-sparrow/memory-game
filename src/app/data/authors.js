@@ -1,16 +1,29 @@
+import eap from "../assets/eap.jpg";
+import hh from "../assets/hh.jpeg";
+import fk from "../assets/fk.jpeg";
+import lt from "../assets/lt.jpeg";
+import fd from "../assets/fd.jpeg";
+import jrt from "../assets/jrt.jpg";
+import ah from "../assets/ah.png";
+import go from "../assets/go.jpeg";
+import rwe from "../assets/rwe.jpeg";
+import ms from "../assets/ms.jpg";
+import vw from "../assets/vw.jpeg";
+import ja from "../assets/ja.jpeg";
+
 const authorList = [
-  { name: "Edgar Allan Poe", imageURL: "../assets/eap.jpg" },
-  { name: "Hermann Hesse", imageURL: "../assets/hh.jpeg" },
-  { name: "Franz Kafka", imageURL: "../assets/fj.jpeg" },
-  { name: "Leo Tolstoy", imageURL: "../assets/lt.jpeg" },
-  { name: "Fyodor Dostoyevsky", imageURL: "../assets/fd.jpeg" },
-  { name: "J.R.R. Tolkien", imageURL: "../assets/jrt.jpg" },
-  { name: "Aldous Huxley", imageURL: "../assets/ah.png" },
-  { name: "George Orwell", imageURL: "../assets/go.jpeg" },
-  { name: "Ralph Waldo Emerson", imageURL: "../assets/rwe.jpeg" },
-  { name: "Mary Shelley", imageURL: "../assets/ms.jpg" },
-  { name: "Virginia Woolf", imageURL: "../assets/vw.jpeg" },
-  { name: "Jane Austen", imageURL: "../assets/ja.jpeg" },
+  { name: "Edgar Allan Poe", image: eap },
+  { name: "Hermann Hesse", image: hh },
+  { name: "Franz Kafka", image: fk },
+  { name: "Leo Tolstoy", image: lt },
+  { name: "Fyodor Dostoyevsky", image: fd },
+  { name: "J.R.R. Tolkien", image: jrt },
+  { name: "Aldous Huxley", image: ah },
+  { name: "George Orwell", image: go },
+  { name: "Ralph Waldo Emerson", image: rwe },
+  { name: "Mary Shelley", image: ms },
+  { name: "Virginia Woolf", image: vw },
+  { name: "Jane Austen", image: ja },
 ];
 
 export default authorList;

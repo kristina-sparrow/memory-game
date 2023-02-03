@@ -40,15 +40,23 @@ export default function Game() {
   }, [level]);
 
   function fetchAuthors(amount) {
+    const generatedIndexes = [];
     const authors = [];
     for (let i = 0; i < amount; i++) {
-      const randomIndex = Math.floor(Math.random() * 12);
-      const author = authorList[randomIndex];
-      const name = author.name;
-      const image = author.imageURL;
+      let randomIndex = getUniqueIndex(generatedIndexes, 12);
+      generatedIndexes.push(randomIndex);
+      const { name, image } = authorList[randomIndex];
       authors.push({ name, image });
     }
     return authors;
+  }
+
+  function getUniqueIndex(generatedIndexes, max) {
+    let randomIndex = Math.floor(Math.random() * max);
+    while (generatedIndexes.includes(randomIndex)) {
+      randomIndex = Math.floor(Math.random() * max);
+    }
+    return randomIndex;
   }
 
   function shuffleCards(array) {
