@@ -1,15 +1,15 @@
-import eap from "../assets/eap.jpg";
-import hh from "../assets/hh.jpeg";
-import fk from "../assets/fk.jpeg";
-import lt from "../assets/lt.jpeg";
-import fd from "../assets/fd.jpeg";
-import jrt from "../assets/jrt.jpg";
-import ah from "../assets/ah.png";
-import go from "../assets/go.jpeg";
-import rwe from "../assets/rwe.jpeg";
-import ms from "../assets/ms.jpg";
-import vw from "../assets/vw.jpeg";
-import ja from "../assets/ja.jpeg";
+import eap from "../../assets/eap.jpg";
+import hh from "../../assets/hh.jpeg";
+import fk from "../../assets/fk.jpeg";
+import lt from "../../assets/lt.jpeg";
+import fd from "../../assets/fd.jpeg";
+import jrt from "../../assets/jrt.jpg";
+import ah from "../../assets/ah.png";
+import go from "../../assets/go.jpeg";
+import rwe from "../../assets/rwe.jpeg";
+import ms from "../../assets/ms.jpg";
+import vw from "../../assets/vw.jpeg";
+import ja from "../../assets/ja.jpeg";
 
 const authorList = [
   { name: "Edgar Allan Poe", image: eap },

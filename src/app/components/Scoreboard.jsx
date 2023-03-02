@@ -5,7 +5,7 @@ export default function Scoreboard({ score, highScore }) {
     <div className="scoreboard">
       <div className="score-description">
         <p>
-          Earn points by clicking on an image you haven`&apos;`t clicked on
+          Earn points by clicking on an image you haven&apos;t clicked on
           before.
         </p>
       </div>
