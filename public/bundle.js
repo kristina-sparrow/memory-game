@@ -603,28 +603,28 @@ function GameOverlay(_ref) {
 }
 ;// CONCATENATED MODULE: ./src/assets/eap.jpg
 const eap_namespaceObject = __webpack_require__.p + "assets/eap.jpg";
-;// CONCATENATED MODULE: ./src/assets/hh.jpeg
-const hh_namespaceObject = __webpack_require__.p + "assets/hh.jpeg";
-;// CONCATENATED MODULE: ./src/assets/fk.jpeg
-const fk_namespaceObject = __webpack_require__.p + "assets/fk.jpeg";
-;// CONCATENATED MODULE: ./src/assets/lt.jpeg
-const lt_namespaceObject = __webpack_require__.p + "assets/lt.jpeg";
-;// CONCATENATED MODULE: ./src/assets/fd.jpeg
-const fd_namespaceObject = __webpack_require__.p + "assets/fd.jpeg";
+;// CONCATENATED MODULE: ./src/assets/hh.jpg
+const hh_namespaceObject = __webpack_require__.p + "assets/hh.jpg";
+;// CONCATENATED MODULE: ./src/assets/fk.jpg
+const fk_namespaceObject = __webpack_require__.p + "assets/fk.jpg";
+;// CONCATENATED MODULE: ./src/assets/lt.jpg
+const lt_namespaceObject = __webpack_require__.p + "assets/lt.jpg";
+;// CONCATENATED MODULE: ./src/assets/fd.jpg
+const fd_namespaceObject = __webpack_require__.p + "assets/fd.jpg";
 ;// CONCATENATED MODULE: ./src/assets/jrt.jpg
 const jrt_namespaceObject = __webpack_require__.p + "assets/jrt.jpg";
-;// CONCATENATED MODULE: ./src/assets/ah.png
-const ah_namespaceObject = __webpack_require__.p + "assets/ah.png";
-;// CONCATENATED MODULE: ./src/assets/go.jpeg
-const go_namespaceObject = __webpack_require__.p + "assets/go.jpeg";
-;// CONCATENATED MODULE: ./src/assets/rwe.jpeg
-const rwe_namespaceObject = __webpack_require__.p + "assets/rwe.jpeg";
+;// CONCATENATED MODULE: ./src/assets/ah.jpg
+const ah_namespaceObject = __webpack_require__.p + "assets/ah.jpg";
+;// CONCATENATED MODULE: ./src/assets/go.jpg
+const go_namespaceObject = __webpack_require__.p + "assets/go.jpg";
+;// CONCATENATED MODULE: ./src/assets/rwe.jpg
+const rwe_namespaceObject = __webpack_require__.p + "assets/rwe.jpg";
 ;// CONCATENATED MODULE: ./src/assets/ms.jpg
 const ms_namespaceObject = __webpack_require__.p + "assets/ms.jpg";
-;// CONCATENATED MODULE: ./src/assets/vw.jpeg
-const vw_namespaceObject = __webpack_require__.p + "assets/vw.jpeg";
-;// CONCATENATED MODULE: ./src/assets/ja.jpeg
-const ja_namespaceObject = __webpack_require__.p + "assets/ja.jpeg";
+;// CONCATENATED MODULE: ./src/assets/vw.jpg
+const vw_namespaceObject = __webpack_require__.p + "assets/vw.jpg";
+;// CONCATENATED MODULE: ./src/assets/ja.jpg
+const ja_namespaceObject = __webpack_require__.p + "assets/ja.jpg";
 ;// CONCATENATED MODULE: ./src/app/data/authors.js
 
 
