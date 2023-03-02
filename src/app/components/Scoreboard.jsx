@@ -3,15 +3,13 @@ import React from "react";
 export default function Scoreboard({ score, highScore }) {
   return (
     <div className="scoreboard">
-      <div className="score-description">
-        <p>
-          Earn points by clicking on an image you haven&apos;t clicked on
-          before.
-        </p>
+      <div className="score-group">
+        <p className="score-title">Score</p>
+        <p className="score-num current">{score}</p>
       </div>
-      <div className="score-display">
-        <p className="score">Score: {score}</p>
-        <p className="score">High Score: {highScore}</p>
+      <div className="score-group">
+        <p className="score">High Score</p>
+        <p className="score-num high">{highScore}</p>
       </div>
     </div>
   );
