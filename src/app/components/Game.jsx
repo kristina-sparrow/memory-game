@@ -31,13 +31,10 @@ export default function Game() {
     }
   }
 
-  useEffect(() => {
-    function loadCards() {
-      const amount = calculateRequiredCards(level);
-      setAuthors(shuffleCards(fetchAuthors(amount)));
-    }
-    loadCards();
-  }, [level]);
+  function loadCards() {
+    const amount = calculateRequiredCards(level);
+    setAuthors(shuffleCards(fetchAuthors(amount)));
+  }
 
   function fetchAuthors(amount) {
     const generatedIndexes = [];
@@ -91,6 +88,10 @@ export default function Game() {
     setScore(newScore);
   }
 
+  useEffect(() => {
+    loadCards();
+  }, [level]);
+
   // GAME OVER & RESET
   function restartGame() {
     setScore(0);
@@ -101,6 +102,7 @@ export default function Game() {
   useEffect(() => {
     if (gameReset === true) {
       setLevel(1);
+      loadCards();
       setClickedCards([]);
       setGameReset(false);
     }
